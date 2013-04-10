@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Jquery.piegraph by edgardleal</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Jquery.piegraph</h1>
+        <h2>jQuery plugin to render a Pie Graph with CSS</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/edgardleal/jquery.piegraph/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/edgardleal/jquery.piegraph/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/edgardleal/jquery.piegraph" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>jquery.piegraph</h1>
+
+<p>jQuery plugin to render a Pie Graph with CSS</p>
+
+<h2>Exemple:</h2>
+
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>   
+ <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/jquery-1.9.1.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://code.jquery.com/ui/1.10.2/jquery-ui.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://github.com/edgardleal/jquery.piegraph/raw/master/jquery.piegraph.js"</span><span class="nt">&gt;&lt;/script&gt;</span>    
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"head"</span><span class="nt">&gt;</span>
+      Teste com gráfico
+    <span class="nt">&lt;/div&gt;</span>  
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"chart"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+     <span class="nx">$</span><span class="p">(</span><span class="s2">"#chart"</span><span class="p">).</span><span class="nx">chart</span><span class="p">({</span><span class="nx">data</span> <span class="o">:</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span><span class="mi">90</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">30</span><span class="p">),</span>
+                    <span class="nx">labels</span> <span class="o">:</span> <span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">),</span>
+                    <span class="nx">width</span> <span class="o">:</span> <span class="mi">400</span><span class="p">});</span>  
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+<pre><code>$ cd jquery.piegraph 
+$ git fetch origin
+$ git checkout master
+</code></pre>
+
+<p>Test the plugin:
+<a href="http://javascript.info/play/HxHQz" title="try it">javascript.info</a></p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
