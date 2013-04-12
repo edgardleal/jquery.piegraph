@@ -23,8 +23,10 @@
            height + "px," + height + "px,0px);";
            var html =
            $("<div style='-moz-transform: rotate(" +
+           pierIndex + "deg);-webkit-transform: rotate(" +
            pierIndex + "deg);" + cssSize + commonCss +
            "'><a href='#' class='pier' style='-moz-transform:rotate(" +
+           (deg - 180) + "deg);-webkit-transform:rotate(" +
            (deg - 180) + "deg);" + cssSize + commonCss + "border-radius:" +
            height + "px;box-shadow : inset 0 0 8px black;background:" +
            colors[(colorIndex++%colors.length)] +
