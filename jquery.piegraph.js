@@ -1,5 +1,13 @@
-        var colors = new Array("red", "green", "yellow", "grey",
-                               "blue", "lime", "orange", "purple");
+/*global jQuery */
+
+/*
+ *
+ *
+ *
+ * @author Edgard Leal <edgardleal@gmail.com>
+ */
+'use strict';
+(function ($) {
   $.widget("ui.chart", {
       options : {
          width : 400,
@@ -7,6 +15,8 @@
          data : null,
          labels : null      
       },
+      colors = ["red", "green", "yellow", "grey",
+                "blue", "lime", "orange", "purple"],
       
       _create : function(){
         var pierIndex = 0;
@@ -29,7 +39,7 @@
            (deg - 180) + "deg);-webkit-transform:rotate(" +
            (deg - 180) + "deg);" + cssSize + commonCss + "border-radius:" +
            height + "px;box-shadow : inset 0 0 8px black;background:" +
-           colors[(colorIndex++%colors.length)] +
+           this.colors[(colorIndex++ % this.colors.length)] +
            "' title='" + deg + "'></a></div>");
            pierIndex += deg;
            return html;
@@ -57,7 +67,7 @@
           var rows  = "";
           for(var i = 0 ; i < this.options.data.length ; i++){
             rows += "<tr><td style='background-color: " +
-            colors[i%colors.length] + "'></td><td>" +
+            this.colors[i%this.colors.length] + "'></td><td>" +
             this.options.data[i] + "</td><td>"+
                 this.options.labels[i] +
             "</td></tr>";
@@ -71,3 +81,4 @@
           "</table>");
       }
   });
+})(jQuery);
