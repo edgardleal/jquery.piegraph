@@ -10,10 +10,6 @@ Exemple:
 <!DOCTYPE HTML>
 <html>
   <head>   
- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-<script src="https://github.com/edgardleal/jquery.piegraph/raw/master/jquery.piegraph.js"></script>    
   </head>
   <body>
     <div id="head">
@@ -21,6 +17,8 @@ Exemple:
     </div>  
     <div id="chart">
     </div>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://github.com/edgardleal/jquery.piegraph/raw/master/jquery.piegraph.js"></script>
   <script>
      $("#chart").chart({data : new Array(90,90, 45, 10,5,25,15,30),
                     labels : new Array("A", "B", "C", "D", "E", "F", "G", "H"),
@@ -31,5 +29,5 @@ Exemple:
 ```
     
 Test the plugin:
-[javascript.info](http://javascript.info/play/HxHQz "try it")
+[jsfiddle](http://jsfiddle.net/edgardleal/gfnw72ay/ "try it")
 
