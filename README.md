@@ -29,5 +29,5 @@ Exemple:
 ```
     
 Test the plugin:
-[jsfiddle](http://jsfiddle.net/edgardleal/gfnw72ay/ "try it")
+[Codepen](http://codepen.io/edgardleal/pen/kkxYVP "try it")
 
